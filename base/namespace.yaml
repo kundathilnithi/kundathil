@@ -4,3 +4,11 @@ metadata:
   name: development
   labels:
     name: development
+---
+
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: devops-tools
+  labels:
+    name: devops-tools
