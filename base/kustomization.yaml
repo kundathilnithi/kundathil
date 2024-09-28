@@ -4,3 +4,4 @@ resources:
   - JenkinServiceAccount.yaml
   - Jenkinsvolume.yaml
   - JenkinsDeployment.yaml
+  - JenkinsService.yaml
