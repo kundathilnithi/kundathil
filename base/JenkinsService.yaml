@@ -23,11 +23,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: jnlpport
+  name: jenkins-jnlpport
 spec:
   type: ClusterIP
   ports:
-    - port: 50000
+    - name: jnlpport
+      port: 50000
       targetPort: 50000
   selector:
     app: jenkins
