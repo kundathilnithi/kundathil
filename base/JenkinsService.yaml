@@ -17,5 +17,20 @@ spec:
       targetPort: 8080
       nodePort: 32000
 
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-jnlp
+  namespace: devops-tools
+  type: ClusterIP
+  ports:
+    - name: jnlpport
+      port: 50000
+      targetPort: 50000
+
+
+
 
  
