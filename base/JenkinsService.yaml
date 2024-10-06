@@ -26,7 +26,7 @@ metadata:
   name: jenkins-jnlpport
   namespace: devops-tools
 spec:
-  type: ClusterIP
+  type: NodePort
   ports:
     - name: jnlpport
       port: 50000
