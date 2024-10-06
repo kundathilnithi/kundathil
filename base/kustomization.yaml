@@ -5,3 +5,4 @@ resources:
   - Jenkinsvolume.yaml
   - JenkinsDeployment.yaml
   - JenkinsService.yaml
+  - serviceaccountsai.yaml
