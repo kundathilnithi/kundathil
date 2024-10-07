@@ -1,10 +1,4 @@
 name: Build and push Docker image to dockerhub
-
-on:
-  push:
-    paths:
-      -  docker/**
-      - .github/workflows/**
     
 jobs:
 
@@ -24,6 +18,7 @@ jobs:
 
     - name: Build and push to dockerhub
       uses: docker/build-push-action@v5
+      file: ./docker/Dockerfile
       with:
        context:
        push: true
