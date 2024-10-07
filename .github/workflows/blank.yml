@@ -3,8 +3,8 @@ name: Build and push Docker image to dockerhub
 on:
   push:
     paths:
-      - 'kundathil/docker/**'
-      - '.github/workflows/**'
+      -  docker/**
+      - .github/workflows/**
     
 jobs:
 
