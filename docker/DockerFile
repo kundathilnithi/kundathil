@@ -1,5 +1,4 @@
 FROM jenkins/inbound-agent:latest
-
 ENV TERRAFORM_VERSION=1.9.7
 ENV TERRAFORM_SHA256SUM=76a77ed7e785ef354b7f565abaa990e3e7b5232d3ec4afb87e0f5a413fcbdad1
 
