@@ -4,7 +4,7 @@ ENV TERRAFORM_SHA256SUM=76a77ed7e785ef354b7f565abaa990e3e7b5232d3ec4afb87e0f5a41
 
 USER root
 RUN apt update
-RUN apt install  make git curl curl-dev openssh && \
+RUN apt install  make git curl  openssh-server && \
     curl https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip > terraform_${TERRAFORM_VERSION}_linux_amd64.zip && \
     echo "${TERRAFORM_SHA256SUM}  terraform_${TERRAFORM_VERSION}_linux_amd64.zip" > terraform_${TERRAFORM_VERSION}_SHA256SUMS && \
     sha256sum -cs terraform_${TERRAFORM_VERSION}_SHA256SUMS && \
